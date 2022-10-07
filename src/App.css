@@ -37,7 +37,19 @@
   }
 } */
 
-
-ul.mb-3.nav.nav-tabs {
-    justify-content: end;
+:root {
+  --blue: #345995;
+  --beige: #efefd0;
+  --rose: #D90368;
+  --orange: #E08E45;
+  --green: #00A896;
 }
+header {
+  color: var(--beige);
+  background-color: var(--green);
+}
+main {
+  background-color: var(--beige)
+}
+
+

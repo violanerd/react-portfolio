@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavTabs from './components/NavTabs';
+import Container from './components/Container';
 
 function App() {
   return (
     <div className="App">
-      <NavTabs></NavTabs>      
+      <Container></Container>      
     </div>
   );
 }
