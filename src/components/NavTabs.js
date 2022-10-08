@@ -8,7 +8,7 @@ function NavTabs({ handlePage }) {
 
     return (
         <header>
-        <h2 className='m-3 mt-0'>Madalyne</h2>
+        <h2 className='m-3 mt-0 pt-5'>Madalyne</h2>
         <nav>
         <Tabs
             

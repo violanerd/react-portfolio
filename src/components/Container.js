@@ -4,6 +4,7 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import NavTabs from './NavTabs'
+import Footer from "./pages/Footer";
 
 function Container() {
     
@@ -30,7 +31,10 @@ function Container() {
     return (
         <div>
             <NavTabs handlePage={handlePage} />
+            <main>
             {renderPage()}
+            </main>
+            <Footer></Footer>
         </div>
 
     )
