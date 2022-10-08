@@ -3,7 +3,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 //defaultActiveKey="about"
-function NavTabs({ handlePage }) {
+function Header({ handlePage }) {
    const [key, setKey] = useState('about');
 
     return (
@@ -29,5 +29,5 @@ function NavTabs({ handlePage }) {
 
     )
 }
-export default NavTabs;
+export default Header;
 

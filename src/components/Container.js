@@ -3,7 +3,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
-import NavTabs from './NavTabs'
+import Header from './Header'
 import Footer from "./pages/Footer";
 
 function Container() {
@@ -30,7 +30,7 @@ function Container() {
     }
     return (
         <div>
-            <NavTabs handlePage={handlePage} />
+            <Header handlePage={handlePage} />
             <main>
             {renderPage()}
             </main>
