@@ -4,23 +4,25 @@ import Button from 'react-bootstrap/Button';
 
 function Contact(){
   
-    const [validated, setValidated] = useState(false);
+  const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
-    
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+     
+    } else {
+      // future - maybe have a component that renders the message?
+      let name = event.target.elements.formName.value;
+      let email = event.target.elements.formEmail.value;
+      let message = event.target.elements.formMessage.value;
+      alert(`Hey ${name} at ${email}, thank you for filling out the form with this message: ${message}`)
     }
-    let name = event.target.elements.formName.value;
-    let email = event.target.elements.formEmail.value;
-    let message = event.target.elements.formMessage.value;
-    alert(`Hey ${name} at ${email}, thank you for filling out the form with this message: ${message}`)
-    //event.preventDefault();
-    //event.stopPropagation();
     
     setValidated(true);
+    
   };
 
     return(
@@ -43,7 +45,7 @@ function Contact(){
         </Form.Group>
         <Form.Group className="mb-3" controlId="formMessage">
         <Form.Label>Message: </Form.Label>
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control required as="textarea" rows={3} />
         <Form.Control.Feedback type="invalid">
             Please provide a message.
           </Form.Control.Feedback>
@@ -57,4 +59,19 @@ function Contact(){
 }
 export default Contact;
 
-
+// const handleSubmit = (event) => {
+    
+//   const form = event.currentTarget;
+//   if (form.checkValidity() === false) {
+//     event.preventDefault();
+//     event.stopPropagation();
+//   }
+//   let name = event.target.elements.formName.value;
+//   let email = event.target.elements.formEmail.value;
+//   let message = event.target.elements.formMessage.value;
+//   alert(`Hey ${name} at ${email}, thank you for filling out the form with this message: ${message}`)
+//   //event.preventDefault();
+//   //event.stopPropagation();
+  
+//   setValidated(true);
+// };
