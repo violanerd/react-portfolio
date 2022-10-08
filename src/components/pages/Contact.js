@@ -27,7 +27,7 @@ function Contact(){
 
     return(
         <div>
-            <Form noValidate validated={validated} className='m-3' onSubmit={handleSubmit}>
+            <Form noValidate validated={validated} className='m-4 p-3 rounded' onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label>Name: </Form.Label>
         <Form.Control required type="text" placeholder="Enter your name" />
@@ -50,7 +50,7 @@ function Contact(){
             Please provide a message.
           </Form.Control.Feedback>
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button type="submit" className="lg w-100">
         Submit
       </Button>
     </Form>
