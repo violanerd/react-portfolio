@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
-//defaultActiveKey="about"
+
 function Header({ handlePage }) {
    const [key, setKey] = useState('about');
+
+   useEffect(() => {window.location.hash = key}, [key])
 
     return (
         <header>
@@ -12,7 +14,7 @@ function Header({ handlePage }) {
         <nav>
         <Tabs
             
-            id="controlled-tab-example"
+            id="controlled-tab"
             className="justify-content-end"
             activeKey={key}
             onSelect={(k) => setKey(k)}

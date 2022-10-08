@@ -36,8 +36,8 @@ function Portfolio(){
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-            </Row>
-            <Row>
+            
+            
             <Col sm={12} lg={6}>
                     <Card className="bg-dark text-white m-1">
                         <Card.Img src="https://via.placeholder.com/250" alt="Card image" />
@@ -64,8 +64,8 @@ function Portfolio(){
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-            </Row>
-            <Row>
+            
+            
             <Col sm={12} lg={6}>
                     <Card className="bg-dark text-white m-1">
                         <Card.Img src="https://via.placeholder.com/250" alt="Card image" />
