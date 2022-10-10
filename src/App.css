@@ -55,6 +55,14 @@ form {
 button.lg{
   background-color: var(--blue) !important;
 }
+.built-with {
+  font-size: smaller;
+}
 
+/* .card-img-top {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+} */
 
 
