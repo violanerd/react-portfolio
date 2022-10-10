@@ -1,11 +1,18 @@
 // this is where the data for the projects will be - export it to portfolio
 import React, { useState } from "react";
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 
 // src can dynamically render from name property
 // src={require(`../../assets/images/${name}.jpg`)}
 // alt can be name
 
 // will need to conditionally render if not available
+
+function Project(){
+
+
 const [projects] = useState([
     {
       title: 'Studio Site',
@@ -56,3 +63,27 @@ const [projects] = useState([
         deploy: 'https://violanerd.github.io/Show-Me-The-Weather/'
       }
 ])
+
+return (
+  <Row>
+    {projects.map((project) => (
+  <Col sm={12} lg={6}>
+    
+      <Card className="bg-dark text-white m-1">
+            <Card.Img src={require(`../../assets/images/${project.name}.jpg`)} alt={project.name} />
+            <Card.ImgOverlay>
+                <Card.Title>{project.name}</Card.Title>
+                <Card.Text>{project.built_with}</Card.Text>
+                <Card.Text>{project.description}</Card.Text>
+            </Card.ImgOverlay>
+        </Card>
+  </Col>
+  ))}
+  </Row>
+
+
+)
+
+}
+
+export default Project;
