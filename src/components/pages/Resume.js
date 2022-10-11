@@ -22,7 +22,7 @@ function Resume(){
                 <li>RESTful APIs</li>
             </ul>
       </div>
-      <div className="text-center" style={{fontStyle: "italic"}}><a id="resume-link" href={resume} download>Download my resume</a></div>
+      <div className="text-center" style={{fontStyle: "italic"}}><a className="link-custom" href={resume} download>Download my resume</a></div>
       </section>
     )
 }

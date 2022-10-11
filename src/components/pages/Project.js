@@ -80,7 +80,7 @@ return (
             {project.description}</Card.Text> */}
            
             <Card.Footer className="d-flex flex-wrap justify-content-between align-items-center">
-          <a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "black", size: 25, className:"m-1" }}><FaGithub/></IconContext.Provider></a>
+          {project.git &&<a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "black", size: 25, className:"m-1" }}><FaGithub/></IconContext.Provider></a>}
           <div>{project.built_with}</div>
           </Card.Footer>
                 
@@ -97,16 +97,3 @@ return (
 
 export default Project;
 
-//<Card.Header className="text-center">{project.title}<small>Built with: {project.built_with} </small></Card.Header>
-//<Card className="m-1">
-{/* <Card.Img variant="top" src={require(`../../assets/images/${project.name}.jpg`)} alt={project.name} />
-<Card.Body>
-  <Card.Title><a href={project.deploy} target="_blank" rel="noreferrer">{project.title}</a></Card.Title>
-<Card.Text>
-  {project.description}<br></br>
-<a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "black", size: 30, className:"m-1" }}><FaGithub/></IconContext.Provider></a>
-{project.built_with}</Card.Text>
-</Card.Body>
-      
-  
-</Card> */}
