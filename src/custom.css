@@ -1,0 +1,42 @@
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 20px 10px;
+  font-family: 'Roboto';
+}
+:root {
+    --blue: #345995;
+    --beige: #efefd0;
+    --rose: #D90368;
+    --orange: #E08E45;
+    --green: #00A896;
+  }
+   header {
+    color: var(--beige);
+    background-color: var(--green);
+  } 
+  
+  form {
+    background-color: rgb(52,89,149, .4);
+  }
+  button.lg{
+    background-color: var(--blue) !important;
+  }
+  .built-with {
+    font-size: smaller;
+  }
+ #resume-link{
+   color: var(--orange)!;
+    text-decoration: none!;
+    }
+  
+@media only screen and (min-width: 992px) {
+    .about-me {
+        display: flex;
+        align-items: center;
+    }
+    form {
+       max-width: 50%;
+    }    
+}
+  

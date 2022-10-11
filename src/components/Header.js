@@ -10,7 +10,7 @@ function Header({ handlePage }) {
 
     return (
         <header>
-        <h2 className='m-3 mt-0 pt-5'>Madalyne</h2>
+        <h1 className='m-3 mt-0 pt-5' style={{fontFamily: "Roboto", fontStyle: "italic", fontWeight: "bolder"}}>Madalyne</h1>
         <nav>
         <Tabs
             
