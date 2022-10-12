@@ -1,23 +1,14 @@
-// this is where the data for the projects will be - export it to portfolio
+
 import React, { useState } from "react";
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import { IconContext } from "react-icons";
 import {FaGithub} from "react-icons/fa"
-// src can dynamically render from name property
-// src={require(`../../assets/images/${name}.jpg`)}
-// alt can be name
 
-// will need to conditionally render if not available
 
 function Project(){
 
-  
-
-  // const handleMouseOut = () => {
-  //   setIsHovering(false);
-  // };
 
 const [projects] = useState([
     {
@@ -76,17 +67,12 @@ return (
   <Col sm={12} lg={6}>
     
     <Card className="m-1" key={project.name}>
-    
-          
-          
-            <Card.Header><a href={project.deploy} target="_blank" rel="noreferrer">{project.title}</a></Card.Header>
+            <Card.Header><a href={project.deploy} target="_blank" rel="noreferrer" className="link-custom">{project.title}</a></Card.Header>
             <Card.Img variant="top" src={require(`../../assets/images/${project.name}.jpg`)} alt={project.name} />
-          {/* <Card.Text>
-            {project.description}</Card.Text> */}
            <Card.ImgOverlay style={{visibility: "hidden"}}>{project.description}</Card.ImgOverlay>
-            <Card.Footer className="d-flex flex-wrap justify-content-between align-items-center">
-          {project.git &&<a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "black", size: 25, className:"m-1" }}><FaGithub/></IconContext.Provider></a>}
-          <div>{project.built_with}</div>
+            <Card.Footer className="d-flex justify-content-between align-items-center">
+          {project.git &&<a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ size: 25, className:"git-icon m-1" }}><FaGithub/></IconContext.Provider></a>}
+          <div id="built-with">{project.built_with}</div>
           </Card.Footer>
                 
             

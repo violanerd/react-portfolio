@@ -59,19 +59,4 @@ function Contact(){
 }
 export default Contact;
 
-// const handleSubmit = (event) => {
-    
-//   const form = event.currentTarget;
-//   if (form.checkValidity() === false) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//   }
-//   let name = event.target.elements.formName.value;
-//   let email = event.target.elements.formEmail.value;
-//   let message = event.target.elements.formMessage.value;
-//   alert(`Hey ${name} at ${email}, thank you for filling out the form with this message: ${message}`)
-//   //event.preventDefault();
-//   //event.stopPropagation();
-  
-//   setValidated(true);
-// };
+
