@@ -12,7 +12,7 @@ function Footer(){
             <a href="https://www.linkedin.com/in/madalyne-a-cross-634303236/" target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "blue", size: 30, className:"m-1 linked-icon"}}><FaLinkedin/></IconContext.Provider></a>
             <a href="https://stackoverflow.com/users/18635184/violanerd" target="_blank" rel="noreferrer"><IconContext.Provider value={{ size: 30, className:"m-1 stack-icon" }}><FaStackOverflow/></IconContext.Provider></a>
             </div>
-            <div> &copy; Madalyne Cross {new Date().getFullYear()}</div>
+            <div className="mt-2"> &copy; Madalyne Cross {new Date().getFullYear()}</div>
         </footer>
     )
 }
