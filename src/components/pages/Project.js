@@ -13,6 +13,11 @@ import {FaGithub} from "react-icons/fa"
 
 function Project(){
 
+  
+
+  // const handleMouseOut = () => {
+  //   setIsHovering(false);
+  // };
 
 const [projects] = useState([
     {
@@ -78,7 +83,7 @@ return (
             <Card.Img variant="top" src={require(`../../assets/images/${project.name}.jpg`)} alt={project.name} />
           {/* <Card.Text>
             {project.description}</Card.Text> */}
-           
+           <Card.ImgOverlay style={{visibility: "hidden"}}>{project.description}</Card.ImgOverlay>
             <Card.Footer className="d-flex flex-wrap justify-content-between align-items-center">
           {project.git &&<a href={project.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ color: "black", size: 25, className:"m-1" }}><FaGithub/></IconContext.Provider></a>}
           <div>{project.built_with}</div>

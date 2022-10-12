@@ -49,6 +49,9 @@ main {
 .git-icon:hover, .linked-icon:hover, .stack-icon:hover {
     transform: scale(1.3);
 }
+.card-img-overlay:hover {
+  visibility: visible;
+}
 
   
 @media only screen and (min-width: 992px) {
