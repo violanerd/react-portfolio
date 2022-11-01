@@ -12,12 +12,12 @@ function Project(){
 
 const [projects] = useState([
     {
-      title: 'Studio Site',
-      built_with: 'Wordpress',
-      description: 'website to promote my teaching business',
-      name: 'studio-site',
-      git: '',
-      deploy: 'https://madalynecross.com/'
+      title: 'Birthday Plan-it',
+      built_with: 'MERN Stack, Nodemailer',
+      description: 'An app to personalize you birthday invitation and invite guests',
+      name: 'birthdayplanit',
+      git: 'https://github.com/violanerd/birthday-plan-it',
+      deploy: 'https://birthdayplanit.herokuapp.com/'
     },
     {
         title: 'Fam Food Finds',

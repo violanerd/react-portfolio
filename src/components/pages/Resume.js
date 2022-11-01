@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/files/resume.pdf"
+import resume from "../../assets/files/resume1.pdf"
 
 function Resume(){
     return(
@@ -25,7 +25,7 @@ function Resume(){
             </ul>
             </div>
       </div>
-      <div className="text-center mt-5" style={{fontStyle: "italic", fontSize: "3ex"}}><a className="link-custom" href={resume} download>Download my resume</a></div>
+      <div className="text-center mt-5" style={{fontStyle: "italic", fontSize: "3ex"}}><a className="link-custom" href={resume} download>Download my resume</a><div> | </div><a className="link-custom" href={resume} target="blank">View my resume</a></div>
       </section>
     )
 }

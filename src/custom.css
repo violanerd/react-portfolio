@@ -41,7 +41,7 @@ body{
 
 .link-custom {
   color: var(--blue)!important;
-  text-decoration:none!important;
+ /* text-decoration:none!important; */
 }
  .link-custom:hover {
   font-weight: bolder;
