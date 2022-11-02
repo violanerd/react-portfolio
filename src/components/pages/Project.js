@@ -8,17 +8,17 @@ import {FaGithub} from "react-icons/fa"
 
 
 function Project(){
-
-
-const [projects] = useState([
-    {
-      title: 'Birthday Plan-it',
+const feature = {
+  title: 'Birthday Plan-it',
       built_with: 'MERN Stack, Nodemailer',
       description: 'An app to personalize you birthday invitation and invite guests',
       name: 'birthdayplanit',
       git: 'https://github.com/violanerd/birthday-plan-it',
       deploy: 'https://birthdayplanit.herokuapp.com/'
-    },
+}
+
+const [projects] = useState([
+
     {
         title: 'Fam Food Finds',
         built_with: 'Node.js, Express.js, MySql2, Sequelize, Handlebars',
@@ -63,8 +63,27 @@ const [projects] = useState([
 
 return (
   <Row>
+    <Col sm={12} lg={12} id={feature.name}>
+  
+    
+  <Card className="m-1" key={feature.name}>
+          <Card.Header><a href={feature.deploy} target="_blank" rel="noreferrer" className="link-custom">{feature.title}</a></Card.Header>
+          <Card.Img variant="top" src={require(`../../assets/images/${feature.name}.jpg`)} alt={feature.name} />
+         <Card.ImgOverlay style={{visibility: "hidden"}}>{feature.description}</Card.ImgOverlay>
+          <Card.Footer className="d-flex justify-content-between align-items-center">
+        {feature.git &&<a href={feature.git} target="_blank" rel="noreferrer"><IconContext.Provider value={{ size: 25, className:"git-icon m-1" }}><FaGithub/></IconContext.Provider></a>}
+        <div id="built-with">{feature.built_with}</div>
+        </Card.Footer>
+              
+          
+      </Card>
+</Col>
+
+
+
     {projects.map((project) => (
-  <Col sm={12} lg={6}>
+    <Col sm={12} lg={6} id={project.name}>
+  
     
     <Card className="m-1" key={project.name}>
             <Card.Header><a href={project.deploy} target="_blank" rel="noreferrer" className="link-custom">{project.title}</a></Card.Header>

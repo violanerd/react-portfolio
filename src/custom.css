@@ -18,6 +18,23 @@ body{
     color: var(--beige);
     background-color: var(--blue);
   } 
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#tag-line {
+  text-align: center
+}
+a.nav-link.nav-link:hover {
+  color: #D90368;
+}
+a.nav-link.nav-link, a.nav-link.nav-link.active  {
+  color: var(--beige);
+}
+
 .nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
     font-size: larger;
 }
@@ -43,8 +60,9 @@ body{
   color: var(--blue)!important;
  /* text-decoration:none!important; */
 }
- .link-custom:hover {
+ a.link-custom:hover {
   font-weight: bolder;
+  color: #D90368!important;
  }
 .git-icon {
   color: var(--blue);
