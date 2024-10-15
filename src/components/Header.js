@@ -17,7 +17,7 @@ function Header({ handlePage }) {
                         <h1 className='m-3 mt-0 pt-5' 
                             style={{fontFamily: "Roboto", fontStyle: "italic", fontSize: "4rem" }} 
                             href="#About">
-                            Madalyne <span><img src={require(`../assets/images/apple-icon.png`)} alt='logo'> </img></span>
+                            Madalyne
                         </h1>
                         <div id="tag-line">Software Developer</div>
                     </div>
