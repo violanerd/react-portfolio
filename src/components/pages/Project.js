@@ -18,15 +18,6 @@ const feature = {
 }
 
 const [projects] = useState([
-
-    {
-        title: 'Fam Food Finds',
-        built_with: 'Node.js, Express.js, MySql2, Sequelize, Handlebars',
-        description: 'small app to share restaurant recommendations from people you know to people you know',
-        name: 'fam-food-finds',
-        git: 'https://github.com/violanerd/fam-food-finds',
-        deploy: 'https://fam-food-finds.herokuapp.com/'
-      },
       {
         title: 'Recipe Box',
         built_with: 'Javascript, CSS, HTML',
@@ -58,7 +49,16 @@ const [projects] = useState([
         name: 'show-me-the-weather',
         git: 'https://github.com/violanerd/Show-Me-The-Weather',
         deploy: 'https://violanerd.github.io/Show-Me-The-Weather/'
-      }
+      },
+      {
+        title: 'Fam Food Finds',
+        built_with: 'Node.js, Express.js, MySql2, Sequelize, Handlebars',
+        description: 'small app to share restaurant recommendations from people you know to people you know',
+        name: 'fam-food-finds',
+        git: 'https://github.com/violanerd/fam-food-finds',
+        // deploy: 'https://fam-food-finds.herokuapp.com/'
+        deploy: 'https://github.com/violanerd/fam-food-finds'
+      },
 ])
 
 return (

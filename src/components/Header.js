@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+
 function Header({ handlePage }) {
    const [key, setKey] = useState('about');
 
@@ -11,17 +12,24 @@ function Header({ handlePage }) {
         <header className='sticky-top'>
             <Navbar id='navbar'>
                     <div onSelect={(k) => setKey(k)}
-                            onClick={(k) => handlePage(k.target.textContent)} eventKey="about">
-                    <h1 className='m-3 mt-0 pt-5' style={{fontFamily: "Roboto", fontStyle: "italic", fontSize: "4rem" }} href="#About">Madalyne</h1>
-                    <div id="tag-line">Full Stack Developer</div>
+                        onClick={(k) => handlePage(k.target.textContent)} 
+                        eventKey="about">
+                        <h1 className='m-3 mt-0 pt-5' 
+                            style={{fontFamily: "Roboto", fontStyle: "italic", fontSize: "4rem" }} 
+                            href="#About">
+                            Madalyne <span><img src={require(`../assets/images/apple-icon.png`)} alt='logo'> </img></span>
+                        </h1>
+                        <div id="tag-line">Software Developer</div>
                     </div>
                     <Nav id="controlled-tab"
-                            activeKey={key}
-                            onSelect={(k) => setKey(k)}
-                            onClick={(k) => handlePage(k.target.textContent)}>
+                        activeKey={key}
+                        onSelect={(k) => setKey(k)}
+                        onClick={(k) => handlePage(k.target.textContent)}
+                        style={{fontSize: "1.5rem" }} 
+                        >
                         <Nav.Link eventKey="about" href="#About">About</Nav.Link>
                         <Nav.Link eventKey="portfolio" href="#Portfolio">Portfolio</Nav.Link>
-                        <Nav.Link eventKey="contact" href="#Contact">Contact</Nav.Link>
+                        {/* <Nav.Link eventKey="contact" href="#Contact">Contact</Nav.Link> */}
                         <Nav.Link eventKey="resume" href="#Resume">Resume</Nav.Link>
                     </Nav>
                 </Navbar>

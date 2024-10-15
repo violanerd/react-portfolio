@@ -29,7 +29,7 @@ body{
   text-align: center
 }
 a.nav-link.nav-link:hover {
-  color: #D90368;
+  color: var(--green);
 }
 a.nav-link.nav-link, a.nav-link.nav-link.active  {
   color: var(--beige);
@@ -62,7 +62,7 @@ a.nav-link.nav-link, a.nav-link.nav-link.active  {
 }
  a.link-custom:hover {
   font-weight: bolder;
-  color: #D90368!important;
+  color: var(--green)!important;
  }
 .git-icon {
   color: var(--blue);
@@ -110,6 +110,12 @@ img.card-img-top {
     #skills{
       flex-direction: row!important;
       justify-content: space-around!important;
-    }    
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-expand {
+    flex-direction: column;
+  }   
 }
   
