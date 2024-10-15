@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.afe8d772.css",
-    "main.js": "/react-portfolio/static/js/main.f34f0ddd.js",
+    "main.js": "/react-portfolio/static/js/main.9f6b4fb7.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile-pic-edited.jpeg": "/react-portfolio/static/media/profile-pic-edited.694b5ecae64c1894dd49.jpeg",
     "static/media/fam-food-finds.jpg": "/react-portfolio/static/media/fam-food-finds.aace726abd2b7cfee7f5.jpg",
@@ -12,14 +12,13 @@
     "static/media/studio-site.jpg": "/react-portfolio/static/media/studio-site.6779edc3366dcadf1bed.jpg",
     "static/media/tech-reads-blog-homepage.jpg": "/react-portfolio/static/media/tech-reads-blog-homepage.069eb5e896623c9bf9f8.jpg",
     "static/media/resume1.pdf": "/react-portfolio/static/media/resume1.6608a839c95cac403301.pdf",
-    "static/media/apple-icon.png": "/react-portfolio/static/media/apple-icon.57db81463f6d5758b849.png",
     "index.html": "/react-portfolio/index.html",
     "main.afe8d772.css.map": "/react-portfolio/static/css/main.afe8d772.css.map",
-    "main.f34f0ddd.js.map": "/react-portfolio/static/js/main.f34f0ddd.js.map",
+    "main.9f6b4fb7.js.map": "/react-portfolio/static/js/main.9f6b4fb7.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afe8d772.css",
-    "static/js/main.f34f0ddd.js"
+    "static/js/main.9f6b4fb7.js"
   ]
 }
