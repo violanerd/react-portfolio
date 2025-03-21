@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.afe8d772.css",
-    "main.js": "/react-portfolio/static/js/main.adc8ce0a.js",
+    "main.js": "/react-portfolio/static/js/main.289e0943.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile-pic-edited.jpeg": "/react-portfolio/static/media/profile-pic-edited.694b5ecae64c1894dd49.jpeg",
     "static/media/fam-food-finds.jpg": "/react-portfolio/static/media/fam-food-finds.aace726abd2b7cfee7f5.jpg",
@@ -14,11 +14,11 @@
     "static/media/tech-reads-blog-homepage.jpg": "/react-portfolio/static/media/tech-reads-blog-homepage.069eb5e896623c9bf9f8.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.afe8d772.css.map": "/react-portfolio/static/css/main.afe8d772.css.map",
-    "main.adc8ce0a.js.map": "/react-portfolio/static/js/main.adc8ce0a.js.map",
+    "main.289e0943.js.map": "/react-portfolio/static/js/main.289e0943.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afe8d772.css",
-    "static/js/main.adc8ce0a.js"
+    "static/js/main.289e0943.js"
   ]
 }
