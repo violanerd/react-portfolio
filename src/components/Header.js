@@ -19,7 +19,7 @@ function Header({ handlePage }) {
                             href="#About">
                             Madalyne
                         </h1>
-                        <div id="tag-line">Software Developer</div>
+                        <div id="tag-line">Software Engineer</div>
                     </div>
                     <Nav id="controlled-tab"
                         activeKey={key}
